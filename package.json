@@ -1,0 +1,24 @@
+{
+    "name": "com.cj-mills.human-pose-2d-toolkit",
+    "displayName": "Human Pose 2D Toolkit",
+    "version": "1.0.0",
+    "unity": "2020.3",
+    "description": "This package provides an easy-to-use and customizable solution to work with and visualize 2D human poses on a Unity canvas. ",
+    "keywords": [
+        "pose-estimation",
+        "visualization",
+        "2D",
+        "unity",
+        "canvas"
+    ],
+    "author": {
+        "name": "Christian Mills",
+        "email": "christian@christianjmills.com",
+        "url": "https://christianjmills.com/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cj-mills/human-pose-2d-toolkit.git"
+    },
+    "license": "MIT"
+}
