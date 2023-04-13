@@ -1,8 +1,6 @@
 {
   "name": "CJM.HumanPose2DToolkit",
-  "references": [
-    Unity.UnityEngine;
-  ],
+  "references": [],
   "optionalUnityReferences": [],
   "includePlatforms": [],
   "excludePlatforms": [],
