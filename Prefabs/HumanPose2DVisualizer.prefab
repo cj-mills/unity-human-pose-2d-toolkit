@@ -147,9 +147,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 2594297810343560714}
-  poseContainerPrefab: {fileID: 1143161870028929264, guid: 67ca36a32980ee94aa9aeb32f3b67161, type: 3}
-  jointPrefab: {fileID: 2592900691645791490, guid: 8d5a2aaabe904584a97c588f373069b7, type: 3}
-  bonePrefab: {fileID: 5563526039618411114, guid: 899e4fd76d2a54249a185f6cd29007b0, type: 3}
-  bodyPartConnectionsFile: {fileID: 4900000, guid: 2fc1e2e7187fd5540b79e0ff4005869e, type: 3}
+  poseContainerPrefab: {fileID: 1143161870028929264, guid: 12c840be0a8d4adc879fc14fb79a316d, type: 3}
+  jointPrefab: {fileID: 2592900691645791490, guid: d90f7f2e5b8f4daa885f9441f0f33427, type: 3}
+  bonePrefab: {fileID: 5563526039618411114, guid: ed947d23b5354617b130aa8ee0cc610b, type: 3}
+  bodyPartConnectionsFile: {fileID: 4900000, guid: 0fc008c60a8e44589674b0f455384a5b, type: 3}
   boneColor: {r: 0, g: 1, b: 0, a: 1}
   jointColor: {r: 0, g: 1, b: 0, a: 1}
