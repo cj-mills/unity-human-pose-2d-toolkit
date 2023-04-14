@@ -1,7 +1,11 @@
 # Unity Human Pose 2D Toolkit
 This Unity package provides an easy-to-use and customizable solution to work with and visualize 2D human poses on a Unity canvas.
 
+## Features
 
+- Display 2D pose skeletons with customizable transparency and colors
+- Automatically manage and update UI elements based on provided pose data
+- Compatible with Unity UI
 
 ## Getting Started
 
