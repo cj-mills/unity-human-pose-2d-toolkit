@@ -6,6 +6,14 @@ https://user-images.githubusercontent.com/9126128/231926454-ae40f842-7b90-4fa9-9
 
 
 
+## Demo Projects
+
+| GitHub Repository                                            | Description                                                |
+| ------------------------------------------------------------ | ---------------------------------------------------------- |
+| [barracuda-inference-posenet-demo](https://github.com/cj-mills/barracuda-inference-posenet-demo) | Perform 2D human pose estimation using PoseNet models.     |
+
+
+
 ## Features
 
 - Display 2D pose skeletons with customizable transparency and colors
