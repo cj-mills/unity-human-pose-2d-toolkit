@@ -57,30 +57,39 @@ namespace CJM.HumanPose2DToolkit
         private const string BonePrefabGUID = "ed947d23b5354617b130aa8ee0cc610b";
         private const string BodyPartConnectionsFileGUID = "0fc008c60a8e44589674b0f455384a5b";
 
+
+        /// <summary>
+        /// Reset is called when the user hits the Reset button in the Inspector's context menu
+        /// or when adding the component the first time. This function is only called in editor mode.
+        /// </summary>
         private void Reset()
         {
-            // Use the AssetDatabase to find the asset by its GUID and set the default values
-            // This will only work in the Unity Editor, not in a build
+            // Load default assets only in the Unity Editor, not in a build
 #if UNITY_EDITOR
-            if (poseContainerPrefab == null)
-            {
-                poseContainerPrefab = UnityEditor.AssetDatabase.LoadAssetAtPath<RectTransform>(UnityEditor.AssetDatabase.GUIDToAssetPath(PoseContainerPrefabGUID));
-            }
+            poseContainerPrefab = LoadDefaultAsset<RectTransform>(PoseContainerPrefabGUID);
+            jointPrefab = LoadDefaultAsset<Image>(JointPrefabGUID);
+            bonePrefab = LoadDefaultAsset<RectTransform>(BonePrefabGUID);
+            bodyPartConnectionsFile = LoadDefaultAsset<TextAsset>(BodyPartConnectionsFileGUID);
+#endif
+        }
 
-            if (jointPrefab == null)
-            {
-                jointPrefab = UnityEditor.AssetDatabase.LoadAssetAtPath<Image>(UnityEditor.AssetDatabase.GUIDToAssetPath(JointPrefabGUID));
-            }
 
-            if (bonePrefab == null)
-            {
-                bonePrefab = UnityEditor.AssetDatabase.LoadAssetAtPath<RectTransform>(UnityEditor.AssetDatabase.GUIDToAssetPath(BonePrefabGUID));
-            }
-
-            if (bodyPartConnectionsFile == null)
-            {
-                bodyPartConnectionsFile = UnityEditor.AssetDatabase.LoadAssetAtPath<TextAsset>(UnityEditor.AssetDatabase.GUIDToAssetPath(BodyPartConnectionsFileGUID));
-            }
+        /// <summary>
+        /// Loads the default asset for the specified type using its GUID.
+        /// </summary>
+        /// <typeparam name="T">The type of asset to be loaded.</typeparam>
+        /// <param name="guid">The GUID of the default asset.</param>
+        /// <returns>The loaded asset of the specified type.</returns>
+        /// <remarks>
+        /// This method is only executed in the Unity Editor, not in builds.
+        /// </remarks>
+        private T LoadDefaultAsset<T>(string guid) where T : UnityEngine.Object
+        {
+#if UNITY_EDITOR
+            // Load the asset from the AssetDatabase using its GUID
+            return UnityEditor.AssetDatabase.LoadAssetAtPath<T>(UnityEditor.AssetDatabase.GUIDToAssetPath(guid));
+#else
+            return null;
 #endif
         }
 
