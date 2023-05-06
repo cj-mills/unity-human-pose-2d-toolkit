@@ -50,8 +50,7 @@ namespace CJM.HumanPose2DToolkit
         private List<List<RectTransform>> bones = new List<List<RectTransform>>(); // Nested list of instantiated bone RectTransforms
         private float confidenceThreshold; // Confidence threshold for displaying poses
 
-        // If you want to set default assets from your project, use the GUID of the asset
-        // You can find the GUID in the .meta file of the asset (open it with a text editor)
+        // GUIDs of the default assets
         private const string PoseContainerPrefabGUID = "12c840be0a8d4adc879fc14fb79a316d";
         private const string JointPrefabGUID = "d90f7f2e5b8f4daa885f9441f0f33427";
         private const string BonePrefabGUID = "ed947d23b5354617b130aa8ee0cc610b";
