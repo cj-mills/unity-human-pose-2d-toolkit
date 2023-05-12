@@ -12,7 +12,8 @@ https://user-images.githubusercontent.com/9126128/231926454-ae40f842-7b90-4fa9-9
 | ------------------------------------------------------------ | ---------------------------------------------------------- |
 | [barracuda-inference-posenet-demo](https://github.com/cj-mills/barracuda-inference-posenet-demo) | Perform 2D human pose estimation using PoseNet models.     |
 
-
+## Code Walkthrough
+* [Code Walkthrough: Unity Human Pose 2D Toolkit Package](https://christianjmills.com/posts/unity-human-pose-2d-toolkit-walkthrough/)
 
 ## Features
 
